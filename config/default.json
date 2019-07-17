@@ -1,0 +1,4 @@
+{
+    "mongoUrl" : "mongodb+srv://root:Pinku52@pinku@myapp-swf1t.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret" : "Myapp"
+}
