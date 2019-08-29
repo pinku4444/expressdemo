@@ -1,5 +1,5 @@
-module.exports = (err,req,res,next) => {
-    console.log("test");
+
+const errorHandlerRoute   = (err,req,res,next) => {
     if(!err.statusCode) {
         err.statusCode = 500;
     }
@@ -8,6 +8,8 @@ module.exports = (err,req,res,next) => {
         code : err.statusCode,
         errors : err.msg
     }
-    res.status(err.statusCode).send(errorResponse);
+    res.status(err.statusCode).json(errorResponse);
 
 }
+
+export default errorHandlerRoute;

@@ -6,6 +6,7 @@ const envVars = process.env;
 const configuration = Object.freeze({
 
     port : envVars.PORT,
+    env : envVars.NODE_ENV,
     mongoUrl : envVars.mongoUrl,
     jwtSecret: envVars.jwtSecret
     
