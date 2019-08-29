@@ -34,7 +34,7 @@ class Server {
         const { mongoUrl,port,env } = this.config;
         const dataBase = new Database(mongoUrl);
         dataBase.connect();
-        app.listen(port,() => {
+        app.listen(port||3000,() => {
             console.log(`App is running at port ${port} || in ${env} mode`)
         })
 
